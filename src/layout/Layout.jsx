@@ -19,12 +19,13 @@ import {
 } from 'lucide-react'
 import { mainNav, otherNav } from '../data.js'
 import { useTheme } from '../theme.jsx'
+import logo from "../assets/fluxora.png"
 
 function Logo() {
   return (
     <div className="flex items-center gap-2.5">
       <div className="grid h-10 w-10 place-items-center rounded-full bg-gradient-to-br from-sky-400 to-blue-600 text-white shadow-lg shadow-blue-500/30">
-        <Sparkles size={20} />
+        <img src={logo} className='object-cover w-full h-full rounded-full' alt="" />
       </div>
       <span className="text-xl font-semibold">Fluxora</span>
     </div>
